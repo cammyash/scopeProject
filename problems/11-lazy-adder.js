@@ -16,13 +16,15 @@ let func1 = lazyAdder(10);
 let func2 = func1(20);
 let total = func2(3);
 console.log(total); // prints 33
-
-AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
-- Explain, but don't code, how you would turn your solution into a one-line
-  fat-arrow function
 ***********************************************************************/
 
-// your code here
+lazyAdder = firstNum => {
+  return secondNum => {
+    return thirdNum => {
+      return firstNum + secondNum + thirdNum
+    }
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
