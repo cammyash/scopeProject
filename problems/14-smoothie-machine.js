@@ -21,8 +21,20 @@ let smoothie2 = smoothieMachine("apples", "bananas", "berries");
 console.log(smoothie2("pineapple"));
 // prints "I'm having a smoothie with apples and bananas and berries and pineapple"
 ***********************************************************************/
+///...string = [kale, spinach]
+//let smoothie + ans [...string];
 
-// your code here
+smoothieMachine = (...string) => {
+  // let smoothie = "I'm having a smoothie with ";
+  return function (...moreStrings) {
+    // return smoothie + string.join(" and ")  + moreStrings.join(" and ");
+    // ingredients = string.concat(moreStrings);
+    string = string.concat(moreStrings)
+    //why doesn't it work if we replace string w ingredietns ^v;
+    return "I'm having a smoothie with " + string.join(" and ")
+  }
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
