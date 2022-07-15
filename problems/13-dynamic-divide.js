@@ -20,7 +20,7 @@ divideByFive(50); // returns 10
 
 dynamicDivide = divisor => {
   return num => {
-    return num / divisor 
+    return num / divisor
   }
 }
 
